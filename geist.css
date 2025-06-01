@@ -1,0 +1,210 @@
+/* Geist Sans Font */
+@font-face {
+  font-family: Geist;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(../fonts/media-8d697b304b401681-s.woff2) format("woff2");
+  unicode-range: u+0301,u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116;
+}
+
+@font-face {
+  font-family: Geist;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(../fonts/media-ba015fad6dcf6784-s.woff2) format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: Geist;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(../fonts/media-569ce4b8f30dc480-s.p.woff2) format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+/* Geist Fallback */
+@font-face {
+  font-family: Geist Fallback;
+  src: local("Arial");
+  ascent-override: 95.94%;
+  descent-override: 28.16%;
+  line-gap-override: 0.00%;
+  size-adjust: 104.76%;
+}
+
+.__className_5cfdac {
+  font-family: Geist, Geist Fallback;
+  font-style: normal;
+}
+
+.__variable_5cfdac {
+  --font-geist-sans: "Geist", "Geist Fallback";
+}
+
+/* Geist Mono Font */
+@font-face {
+  font-family: Geist Mono;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(../fonts/media-9610d9e46709d722-s.woff2) format("woff2");
+  unicode-range: u+0301,u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116;
+}
+
+@font-face {
+  font-family: Geist Mono;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(../fonts/media-747892c23ea88013-s.woff2) format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: Geist Mono;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(../fonts/media-93f479601ee12b01-s.p.woff2) format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+/* Geist Mono Fallback */
+@font-face {
+  font-family: Geist Mono Fallback;
+  src: local("Arial");
+  ascent-override: 74.67%;
+  descent-override: 21.92%;
+  line-gap-override: 0.00%;
+  size-adjust: 134.59%;
+}
+
+.__className_9a8899 {
+  font-family: Geist Mono, Geist Mono Fallback;
+  font-style: normal;
+}
+
+.__variable_9a8899 {
+  --font-geist-mono: "Geist Mono", "Geist Mono Fallback";
+  }
+/* Tailwind CSS v4.0.13 */
+@layer theme {
+  :host, :root {
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+    --color-red-400: oklch(.704 .191 22.216);
+    --color-red-500: oklch(.637 .237 25.331);
+    --color-red-600: oklch(.577 .245 27.325);
+    --color-red-700: oklch(.505 .213 27.518);
+    --color-yellow-50: oklch(.987 .026 102.212);
+    --color-yellow-500: oklch(.795 .184 86.047);
+    --color-yellow-600: oklch(.681 .162 75.834);
+    --color-yellow-800: oklch(.476 .114 61.907);
+    --color-green-500: oklch(.723 .219 149.579);
+    --color-blue-400: oklch(.707 .165 254.624);
+    --color-purple-50: oklch(.977 .014 308.299);
+    --color-purple-200: oklch(.902 .063 306.703);
+    --color-purple-400: oklch(.714 .203 305.504);
+    --color-purple-500: oklch(.627 .265 303.9);
+    --color-purple-600: oklch(.558 .288 302.321);
+    --color-purple-700: oklch(.496 .265 301.924);
+    --color-gray-50: oklch(.985 .002 247.839);
+    --color-gray-100: oklch(.967 .003 264.542);
+    --color-gray-200: oklch(.928 .006 264.531);
+    --color-gray-400: oklch(.707 .022 261.325);
+    --color-gray-500: oklch(.551 .027 264.364);
+    --color-gray-600: oklch(.446 .03 256.802);
+    --color-gray-700: oklch(.373 .034 259.733);
+    --color-gray-800: oklch(.278 .033 256.848);
+    --color-gray-900: oklch(.21 .034 264.665);
+    --color-black: #000;
+    --color-white: #fff;
+    --spacing: .25rem;
+    --container-md: 28rem;
+    --container-7xl: 80rem;
+    --text-xs: .75rem;
+    --text-xs--line-height: calc(1/.75);
+    --text-sm: .875rem;
+    --text-sm--line-height: calc(1.25/.875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5/1);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75/1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75/1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2/1.5);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5/2.25);
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --radius-md: .375rem;
+    --radius-lg: .5rem;
+    --default-transition-duration: .15s;
+    --default-transition-timing-function: cubic-bezier(.4,0,.2,1);
+    --default-font-family: var(--font-sans);
+    --default-font-feature-settings: var(--font-sans--font-feature-settings);
+    --default-font-variation-settings: var(--font-sans--font-variation-settings);
+    --default-mono-font-family: var(--font-mono);
+    --default-mono-font-feature-settings: var(--font-mono--font-feature-settings);
+    --default-mono-font-variation-settings: var(--font-mono--font-variation-settings);
+  }
+                            }
+/* Layout Utilities */
+.flex { display: flex }
+.flex-col { flex-direction: column }
+.items-center { align-items: center }
+.justify-center { justify-content: center }
+.justify-between { justify-content: space-between }
+.gap-4 { gap: 1rem }
+
+/* Spacing Utilities */
+.mt-8 { margin-top: 2rem }
+.p-4 { padding: 1rem }
+.px-4 { padding-left: 1rem; padding-right: 1rem }
+.py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem }
+
+/* Typography Utilities */
+.text-center { text-align: center }
+.font-bold { font-weight: 700 }
+.text-white { color: white }
+.text-purple-600 { color: var(--color-purple-600) }
+
+/* Background Utilities */
+.bg-white { background-color: white }
+.bg-purple-600 { background-color: var(--color-purple-600) }
+.hover\:bg-purple-700:hover { background-color: var(--color-purple-700) }
+
+/* Border Utilities */
+.rounded-lg { border-radius: 0.5rem }
+.border { border-width: 1px }
+.border-gray-200 { border-color: var(--color-gray-200) }
+
+/* Effects Utilities */
+.shadow-md { box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1) }
+.transition-colors { transition-property: color, background-color, border-color; transition-duration: 0.15s }
+@media (min-width: 640px) {
+  .sm\:flex-row { flex-direction: row }
+  .sm\:items-center { align-items: center }
+  .sm\:w-1\/4 { width: 25% }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-3\/4 { width: 75% }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
