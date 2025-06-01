@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Paste | PASTE.AD</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">PASTE.AD</h1>
+            <nav>
+                <a href="index.html" class="btn secondary">Home</a>
+                <a href="paste.html" class="btn primary">New Paste</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="paste-view">
+            <div class="paste-meta">
+                <h2 id="paste-view-title">Untitled Paste</h2>
+                <div class="meta-info">
+                    <span id="paste-date">Just now</span>
+                    <span id="paste-syntax">Plain text</span>
+                    <span id="paste-views">0 views</span>
+                </div>
+            </div>
+
+            <div class="paste-content">
+                <pre><code id="paste-content">Loading paste content...</code></pre>
+            </div>
+
+            <div class="paste-actions">
+                <button id="copy-btn" class="btn secondary">Copy</button>
+                <button id="raw-btn" class="btn secondary">View Raw</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
