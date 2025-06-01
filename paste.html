@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Paste | PASTE.AD</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">PASTE.AD</h1>
+            <nav>
+                <a href="index.html" class="btn secondary">Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="paste-editor">
+            <h2>Create New Paste</h2>
+            <form id="paste-form">
+                <div class="form-group">
+                    <label for="paste-title">Title (optional)</label>
+                    <input type="text" id="paste-title" placeholder="My Awesome Code">
+                </div>
+
+                <div class="form-group">
+                    <label for="paste-content">Content</label>
+                    <textarea id="paste-content" placeholder="Paste your text here..." required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="syntax">Syntax Highlighting</label>
+                        <select id="syntax">
+                            <option value="none">None</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="python">Python</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="expiry">Expires After</label>
+                        <select id="expiry">
+                            <option value="never">Never</option>
+                            <option value="10m">10 Minutes</option>
+                            <option value="1h">1 Hour</option>
+                            <option value="1d">1 Day</option>
+                            <option value="1w">1 Week</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox">
+                        <input type="checkbox" id="private">
+                        <span>Private (password protected)</span>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" id="burn-after">
+                        <span>Burn after reading</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn primary">Create Paste</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/editor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
